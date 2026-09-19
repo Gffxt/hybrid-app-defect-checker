@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sample Hybrid App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-container">
+      <button class="icon-btn" id="menu-btn" onclick="toggleMenu()">☰</button>
+      <h1 class="logo">Demo<span>App</span></h1>
+      <button class="icon-btn" id="search-btn" onclick="openSearch()">🔍</button>
+    </div>
+  </header>
+
+  <main class="main-body" id="main-content">
+    <section id="section-home" class="view-section">
+      <h2>Featured Content</h2>
+      <div class="card-grid" id="card-grid">
+        <div class="card">
+          <h3>Sample Item</h3>
+          <p>This is a test card for UI defect verification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-search" class="view-section hidden">
+      <h2>Search View</h2>
+      <input type="text" id="search-input" placeholder="Search..." />
+    </section>
+  </main>
+
+  <nav class="mobile-bottom-nav">
+    <button class="nav-item active" onclick="navigateTo('home')">Home</button>
+    <button class="nav-item" onclick="navigateTo('search')">Search</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
