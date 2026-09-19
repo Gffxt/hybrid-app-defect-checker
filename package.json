@@ -1,0 +1,31 @@
+{
+  "name": "hybrid-app-defect-checker",
+  "version": "1.0.0",
+  "description": "Automated UI/UX Defect and Function Break Checker for Hybrid Mobile (Capacitor/Cordova) and Web Apps",
+  "main": "check_defects.py",
+  "bin": {
+    "defect-check": "./check_defects.sh"
+  },
+  "scripts": {
+    "audit": "python3 check_defects.py",
+    "audit:strict": "python3 check_defects.py --strict",
+    "test": "python3 check_defects.py"
+  },
+  "keywords": [
+    "ui-defect",
+    "ux-audit",
+    "capacitor",
+    "cordova",
+    "android",
+    "jetpack-compose",
+    "mobile-audit",
+    "static-analysis",
+    "function-checker"
+  ],
+  "author": "Pixi (Gffxt)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gffxt/hybrid-app-defect-checker.git"
+  }
+}
